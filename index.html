@@ -31,6 +31,7 @@ body {
   place-items: center;
   background: hsl(210 20% 10%);
   font-family: 'Kalam', cursive;
+  overflow-x: hidden;
 }
 
 .tree {
@@ -143,6 +144,18 @@ body {
     font-size: 3vw;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 1023px) {
+  .left-star,.right-star{
+    margin: 0 auto;
+  }
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+  .wishes{
+    padding: 15vw 0;
+  }
+}
+
 </style>
 <body>
    <div class="wrapper">
